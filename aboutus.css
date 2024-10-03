@@ -1,0 +1,72 @@
+/* aboutus.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Set background to black */
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .anim {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333; /* Darker box background for contrast */
+    border: 2px solid #555; /* Slightly lighter border */
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    color: #ffa500; /* Text color set to orange */
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .anim span {
+    opacity: 0;
+    filter: blur(1px);
+    display: inline-block;
+    animation: animate 1.0s linear forwards; /* Reduced animation duration */
+  }
+  
+  @keyframes animate {
+    0% {
+      filter: blur(10px);
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+  
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+  
+  .anim span:nth-child(1) {
+    animation-delay: 0.5s; /* Reduced animation delay */
+  }
+  
+  .anim span:nth-child(2) {
+    animation-delay: 1.22s;
+  }
+  
+  .anim span:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  .anim span:nth-child(4) {
+    animation-delay: 2.1s;
+  }
+  
